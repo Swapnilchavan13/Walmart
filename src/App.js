@@ -4,6 +4,7 @@ import LoginPage from "./components/LoginPage";
 import UserPage from "./components/UserPage";
 import CountdownTimer from "./components/Timer";
 import TodoList from "./components/Todos";
+import ExampleComponent from "./components/Example";
 
 const App = () => {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
@@ -12,6 +13,7 @@ const App = () => {
     <div className="App">
       {isLoggedIn ? <UserPage /> : <LoginPage />}
       <CountdownTimer />
+      <ExampleComponent />
       <TodoList />
     </div>
   );
